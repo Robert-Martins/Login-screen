@@ -37,6 +37,8 @@ html,body{
     width: 100%;
     height: 100%;
     background-image: url('../assets/bg.jpg!d');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form-container{
@@ -77,8 +79,11 @@ html,body{
     width: 220px;
 }
 
-input[type="checkbox"], input[type="checkbox"]:hover{
+input[type="checkbox"], input[type="checkbox"]:hover, input[type="checkbox"]:checked{
     margin: 8px 12px;
+    outline: 0;
+    border: #ff6200 1px solid;
+    background-color: #ff6200;
 }
 
 .form-submit{
@@ -87,7 +92,7 @@ input[type="checkbox"], input[type="checkbox"]:hover{
 }
 
 .form-submit input{
-    border: 0;
+    border: #ff6200 1px solid;
     outline: none;
     cursor: pointer;
     background-color: #ff6200;
@@ -129,7 +134,7 @@ input[type="checkbox"], input[type="checkbox"]:hover{
 }
 
 .forgot-password button:focus, .forgot-password button:hover{
-    border: 0;
+    border: #ff6200 1px solid;
     outline: none;
     cursor: pointer;
     background-color: #ff6200;
@@ -146,7 +151,7 @@ input[type="checkbox"], input[type="checkbox"]:hover{
 
 .register button{
     margin: 20px 0;
-    border: 0;
+    border: #ff6200 1px solid;
     outline: none;
     cursor: pointer;
     background-color: #ff6200;
