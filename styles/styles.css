@@ -68,15 +68,21 @@ html,body{
     margin: 8px 0;
 }
 
-.form-input input, .form-input input:focus, .form-input input:hover{
+.form-input input{
     cursor: pointer;
     text-decoration: none;
     outline: none;
     border: 0;
-    border-left: #ff6200 2px solid;
-    border-bottom: #ff6200 1px solid;
+    border-left: #ff9200 2px solid;
+    border-bottom: #ff9200 1px solid;
     padding: 8px 12px;
     width: 220px;
+}
+
+.form-input input:focus, .form-input input:hover{
+    border-left: #ff6200 2px solid;
+    border-bottom: #ff6200 1px solid;
+    transition: 0.2s;
 }
 
 input[type="checkbox"], input[type="checkbox"]:hover, input[type="checkbox"]:checked{
@@ -106,15 +112,9 @@ input[type="checkbox"], input[type="checkbox"]:hover, input[type="checkbox"]:che
 
 .form-submit input:focus, .form-submit input:hover{
     border: #ff6200 1px solid;
-    outline: none;
-    cursor: pointer;
     background-color: white;
     color: #ff6200;
-    width: 240px;
-    padding: 10px 0;
-    box-sizing: border-box;
-    font-size: 18.72px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s;
 }
 
 .forgot-password{
@@ -135,13 +135,10 @@ input[type="checkbox"], input[type="checkbox"]:hover, input[type="checkbox"]:che
 
 .forgot-password button:focus, .forgot-password button:hover{
     border: #ff6200 1px solid;
-    outline: none;
-    cursor: pointer;
     background-color: #ff6200;
     color: white;
-    width: 240px;
-    padding: 10px 0;
-    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .register{
@@ -162,13 +159,10 @@ input[type="checkbox"], input[type="checkbox"]:hover, input[type="checkbox"]:che
 }
 
 .register button:focus, .register button:hover{
-    margin: 20px 0;
     border: #ff6200 1px solid;
-    outline: none;
-    cursor: pointer;
     background-color: white;
     color: #ff6200;
-    width: 240px;
-    padding: 10px 0;
-    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
 }
+
